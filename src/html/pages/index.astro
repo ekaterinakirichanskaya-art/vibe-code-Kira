@@ -5,7 +5,7 @@ import Topbar from "@components/dashboard/_topbar.astro"
 import Sidenav from "@components/dashboard/_sidenav.astro"
 import Scripts from "@components/_scripts.astro"
 
-const title = "AdminLTE v4 | Dashboard"
+const title = "AdminLTE v4 | Panel de control"
 const path = "../../dist"
 const mainPage = "dashboard"
 const page = "index";
@@ -18,7 +18,7 @@ const deploymentPath = depth === 0 ? './' : '../'.repeat(depth);
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <!--begin::Head-->
   <head>
     <Head title={title} path={path} />
@@ -55,13 +55,13 @@ const deploymentPath = depth === 0 ? './' : '../'.repeat(depth);
             <!--begin::Row-->
             <div class="row">
               <div class="col-sm-6">
-                <h3 class="mb-0">Dashboard</h3>
+                <h3 class="mb-0">Panel de control</h3>
               </div>
               <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-end">
-                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item"><a href="#">Inicio</a></li>
                   <li class="breadcrumb-item active" aria-current="page">
-                    Dashboard
+                    Panel de control
                   </li>
                 </ol>
               </div>
@@ -84,7 +84,7 @@ const deploymentPath = depth === 0 ? './' : '../'.repeat(depth);
                   <div class="inner">
                     <h3>150</h3>
 
-                    <p>New Orders</p>
+                    <p>Pedidos nuevos</p>
                   </div>
                   <svg
                     class="small-box-icon"
@@ -101,7 +101,7 @@ const deploymentPath = depth === 0 ? './' : '../'.repeat(depth);
                     href="#"
                     class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover"
                   >
-                    More info <i class="bi bi-link-45deg"></i>
+                    Más información <i class="bi bi-link-45deg"></i>
                   </a>
                 </div>
                 <!--end::Small Box Widget 1-->
@@ -113,7 +113,7 @@ const deploymentPath = depth === 0 ? './' : '../'.repeat(depth);
                   <div class="inner">
                     <h3>53<sup class="fs-5">%</sup></h3>
 
-                    <p>Bounce Rate</p>
+                    <p>Tasa de rebote</p>
                   </div>
                   <svg
                     class="small-box-icon"
@@ -130,7 +130,7 @@ const deploymentPath = depth === 0 ? './' : '../'.repeat(depth);
                     href="#"
                     class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover"
                   >
-                    More info <i class="bi bi-link-45deg"></i>
+                    Más información <i class="bi bi-link-45deg"></i>
                   </a>
                 </div>
                 <!--end::Small Box Widget 2-->
@@ -142,7 +142,7 @@ const deploymentPath = depth === 0 ? './' : '../'.repeat(depth);
                   <div class="inner">
                     <h3>44</h3>
 
-                    <p>User Registrations</p>
+                    <p>Registros de usuarios</p>
                   </div>
                   <svg
                     class="small-box-icon"
@@ -159,7 +159,7 @@ const deploymentPath = depth === 0 ? './' : '../'.repeat(depth);
                     href="#"
                     class="small-box-footer link-dark link-underline-opacity-0 link-underline-opacity-50-hover"
                   >
-                    More info <i class="bi bi-link-45deg"></i>
+                    Más información <i class="bi bi-link-45deg"></i>
                   </a>
                 </div>
                 <!--end::Small Box Widget 3-->
@@ -171,7 +171,7 @@ const deploymentPath = depth === 0 ? './' : '../'.repeat(depth);
                   <div class="inner">
                     <h3>65</h3>
 
-                    <p>Unique Visitors</p>
+                    <p>Visitantes únicos</p>
                   </div>
                   <svg
                     class="small-box-icon"
@@ -195,7 +195,7 @@ const deploymentPath = depth === 0 ? './' : '../'.repeat(depth);
                     href="#"
                     class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover"
                   >
-                    More info <i class="bi bi-link-45deg"></i>
+                    Más información <i class="bi bi-link-45deg"></i>
                   </a>
                 </div>
                 <!--end::Small Box Widget 4-->
@@ -209,7 +209,7 @@ const deploymentPath = depth === 0 ? './' : '../'.repeat(depth);
               <div class="col-lg-7 connectedSortable">
                 <div class="card mb-4">
                   <div class="card-header">
-                    <h3 class="card-title">Sales Value</h3>
+                    <h3 class="card-title">Valor de ventas</h3>
                   </div>
 
                   <div class="card-body">
@@ -221,11 +221,11 @@ const deploymentPath = depth === 0 ? './' : '../'.repeat(depth);
                 <!-- DIRECT CHAT -->
                 <div class="card direct-chat direct-chat-primary mb-4">
                   <div class="card-header">
-                    <h3 class="card-title">Direct Chat</h3>
+                    <h3 class="card-title">Chat directo</h3>
 
                     <div class="card-tools">
                       <span
-                        title="3 New Messages"
+                        title="3 mensajes nuevos"
                         class="badge text-bg-primary"
                       >
                         3
@@ -241,7 +241,7 @@ const deploymentPath = depth === 0 ? './' : '../'.repeat(depth);
                       <button
                         type="button"
                         class="btn btn-tool"
-                        title="Contacts"
+                        title="Contactos"
                         data-lte-toggle="chat-pane"
                       >
                         <i class="bi bi-chat-text-fill"></i>
@@ -266,18 +266,18 @@ const deploymentPath = depth === 0 ? './' : '../'.repeat(depth);
                             AI HERO
                           </span>
                           <span class="direct-chat-timestamp float-end">
-                            23 Jan 2:00 pm
+                            23 ene 2:00 pm
                           </span>
                         </div>
                         <!-- /.direct-chat-infos -->
                         <img
                           class="direct-chat-img"
                           src={deploymentPath + "assets/img/user1-128x128.jpg"}
-                          alt="message user image"
+                          alt="imagen de usuario del mensaje"
                         />
                         <!-- /.direct-chat-img -->
                         <div class="direct-chat-text">
-                          Is this template really for free? That's unbelievable!
+                          ¿Esta plantilla es realmente gratis? ¡Es increíble!
                         </div>
                         <!-- /.direct-chat-text -->
                       </div>
@@ -290,18 +290,18 @@ const deploymentPath = depth === 0 ? './' : '../'.repeat(depth);
                             Sarah Bullock
                           </span>
                           <span class="direct-chat-timestamp float-start">
-                            23 Jan 2:05 pm
+                            23 ene 2:05 pm
                           </span>
                         </div>
                         <!-- /.direct-chat-infos -->
                         <img
                           class="direct-chat-img"
                           src={deploymentPath + "assets/img/user3-128x128.jpg"}
-                          alt="message user image"
+                          alt="imagen de usuario del mensaje"
                         />
                         <!-- /.direct-chat-img -->
                         <div class="direct-chat-text">
-                          You better believe it!
+                          ¡Créelo!
                         </div>
                         <!-- /.direct-chat-text -->
                       </div>
@@ -314,18 +314,18 @@ const deploymentPath = depth === 0 ? './' : '../'.repeat(depth);
                             AI HERO
                           </span>
                           <span class="direct-chat-timestamp float-end">
-                            23 Jan 5:37 pm
+                            23 ene 5:37 pm
                           </span>
                         </div>
                         <!-- /.direct-chat-infos -->
                         <img
                           class="direct-chat-img"
                           src={deploymentPath + "assets/img/user1-128x128.jpg"}
-                          alt="message user image"
+                          alt="imagen de usuario del mensaje"
                         />
                         <!-- /.direct-chat-img -->
                         <div class="direct-chat-text">
-                          Working with AdminLTE on a great new app! Wanna join?
+                          ¡Estoy trabajando con AdminLTE en una app nueva genial! ¿Quieres unirte?
                         </div>
                         <!-- /.direct-chat-text -->
                       </div>
@@ -338,17 +338,17 @@ const deploymentPath = depth === 0 ? './' : '../'.repeat(depth);
                             Sarah Bullock
                           </span>
                           <span class="direct-chat-timestamp float-start">
-                            23 Jan 6:10 pm
+                            23 ene 6:10 pm
                           </span>
                         </div>
                         <!-- /.direct-chat-infos -->
                         <img
                           class="direct-chat-img"
                           src={deploymentPath + "assets/img/user3-128x128.jpg"}
-                          alt="message user image"
+                          alt="imagen de usuario del mensaje"
                         />
                         <!-- /.direct-chat-img -->
-                        <div class="direct-chat-text">I would love to.</div>
+                        <div class="direct-chat-text">Me encantaría.</div>
                         <!-- /.direct-chat-text -->
                       </div>
                       <!-- /.direct-chat-msg -->
@@ -363,18 +363,18 @@ const deploymentPath = depth === 0 ? './' : '../'.repeat(depth);
                             <img
                               class="contacts-list-img"
                               src={deploymentPath + "assets/img/user1-128x128.jpg"}
-                              alt="User Avatar"
+                              alt="Avatar de usuario"
                             />
 
                             <div class="contacts-list-info">
                               <span class="contacts-list-name">
-                                Count Dracula
+                                Conde Drácula
                                 <small class="contacts-list-date float-end">
                                   2/28/2023
                                 </small>
                               </span>
                               <span class="contacts-list-msg">
-                                How have you been? I was...
+                                ¿Cómo has estado? Yo estaba...
                               </span>
                             </div>
                             <!-- /.contacts-list-info -->
@@ -386,7 +386,7 @@ const deploymentPath = depth === 0 ? './' : '../'.repeat(depth);
                             <img
                               class="contacts-list-img"
                               src={deploymentPath + "assets/img/user7-128x128.jpg"}
-                              alt="User Avatar"
+                              alt="Avatar de usuario"
                             />
 
                             <div class="contacts-list-info">
@@ -397,7 +397,7 @@ const deploymentPath = depth === 0 ? './' : '../'.repeat(depth);
                                 </small>
                               </span>
                               <span class="contacts-list-msg">
-                                I will be waiting for...
+                                Estaré esperando...
                               </span>
                             </div>
                             <!-- /.contacts-list-info -->
@@ -409,7 +409,7 @@ const deploymentPath = depth === 0 ? './' : '../'.repeat(depth);
                             <img
                               class="contacts-list-img"
                               src={deploymentPath + "assets/img/user3-128x128.jpg"}
-                              alt="User Avatar"
+                              alt="Avatar de usuario"
                             />
 
                             <div class="contacts-list-info">
@@ -420,7 +420,7 @@ const deploymentPath = depth === 0 ? './' : '../'.repeat(depth);
                                 </small>
                               </span>
                               <span class="contacts-list-msg">
-                                I'll call you back at...
+                                Te llamaré de vuelta a las...
                               </span>
                             </div>
                             <!-- /.contacts-list-info -->
@@ -432,7 +432,7 @@ const deploymentPath = depth === 0 ? './' : '../'.repeat(depth);
                             <img
                               class="contacts-list-img"
                               src={deploymentPath + "assets/img/user5-128x128.jpg"}
-                              alt="User Avatar"
+                              alt="Avatar de usuario"
                             />
 
                             <div class="contacts-list-info">
@@ -443,7 +443,7 @@ const deploymentPath = depth === 0 ? './' : '../'.repeat(depth);
                                 </small>
                               </span>
                               <span class="contacts-list-msg">
-                                Where is your new...
+                                ¿Dónde está tu nuevo...
                               </span>
                             </div>
                             <!-- /.contacts-list-info -->
@@ -455,7 +455,7 @@ const deploymentPath = depth === 0 ? './' : '../'.repeat(depth);
                             <img
                               class="contacts-list-img"
                               src={deploymentPath + "assets/img/user6-128x128.jpg"}
-                              alt="User Avatar"
+                              alt="Avatar de usuario"
                             />
 
                             <div class="contacts-list-info">
@@ -466,7 +466,7 @@ const deploymentPath = depth === 0 ? './' : '../'.repeat(depth);
                                 </small>
                               </span>
                               <span class="contacts-list-msg">
-                                Can I take a look at...
+                                ¿Puedo echar un vistazo a...
                               </span>
                             </div>
                             <!-- /.contacts-list-info -->
@@ -478,7 +478,7 @@ const deploymentPath = depth === 0 ? './' : '../'.repeat(depth);
                             <img
                               class="contacts-list-img"
                               src={deploymentPath + "assets/img/user8-128x128.jpg"}
-                              alt="User Avatar"
+                              alt="Avatar de usuario"
                             />
 
                             <div class="contacts-list-info">
@@ -489,7 +489,7 @@ const deploymentPath = depth === 0 ? './' : '../'.repeat(depth);
                                 </small>
                               </span>
                               <span class="contacts-list-msg">
-                                Never mind I found...
+                                No importa, encontré...
                               </span>
                             </div>
                             <!-- /.contacts-list-info -->
@@ -508,12 +508,12 @@ const deploymentPath = depth === 0 ? './' : '../'.repeat(depth);
                         <input
                           type="text"
                           name="message"
-                          placeholder="Type Message ..."
+                          placeholder="Escribe un mensaje..."
                           class="form-control"
                         />
                         <span class="input-group-append">
                           <button type="button" class="btn btn-primary">
-                            Send
+                            Enviar
                           </button>
                         </span>
                       </div>
@@ -531,7 +531,7 @@ const deploymentPath = depth === 0 ? './' : '../'.repeat(depth);
                   class="card text-white bg-primary bg-gradient border-primary mb-4"
                 >
                   <div class="card-header border-0">
-                    <h3 class="card-title">Sales Value</h3>
+                    <h3 class="card-title">Valor de ventas</h3>
                     <div class="card-tools">
                       <button
                         type="button"
@@ -551,15 +551,15 @@ const deploymentPath = depth === 0 ? './' : '../'.repeat(depth);
                     <div class="row">
                       <div class="col-4 text-center">
                         <div id="sparkline-1" class="text-dark"></div>
-                        <div class="text-white">Visitors</div>
+                        <div class="text-white">Visitantes</div>
                       </div>
                       <div class="col-4 text-center">
                         <div id="sparkline-2" class="text-dark"></div>
-                        <div class="text-white">Online</div>
+                        <div class="text-white">En línea</div>
                       </div>
                       <div class="col-4 text-center">
                         <div id="sparkline-3" class="text-dark"></div>
-                        <div class="text-white">Sales</div>
+                        <div class="text-white">Ventas</div>
                       </div>
                     </div>
                     <!--end::Row-->
